@@ -8,7 +8,7 @@
   )
 )
 
-(when (string= "copilot" ai-provider)
+(when (string-search "copilot" ai-provider)
   (progn
     (use-package copilot
 	:vc (:url "https://github.com/copilot-emacs/copilot.el"
@@ -22,7 +22,7 @@
   )
 )
 
-(when (string= "ellama" ai-provider)
+(when (string-search "ellama" ai-provider)
   (use-package ellama
     :vc (:url "https://github.com/s-kostyaev/ellama"
                 :rev :newest
